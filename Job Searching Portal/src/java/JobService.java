@@ -16,10 +16,7 @@ public class JobService {
     @Autowired
     private JobRepo repo;
 
-    public void addJob(JobPost jobPost){
-//        repo.addJob(jobPost); //here jobPost is a DTO i.e Data Transfer obj
-          repo.save(jobPost);
-    }
+    
 
    public List<JobPost> getAllJobs(){
           return repo.findAll();
